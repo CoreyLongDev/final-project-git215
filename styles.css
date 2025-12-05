@@ -1,8 +1,10 @@
 /* CSS RESET */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,9 +48,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* END RESET */
 
 /* ROOT STYLES */
+
 :root{
     --primary-color: #2c5f7f;
     --secondary-color: #8b4513;
@@ -65,7 +69,10 @@ table {
     --font-secondary-style: normal;
 }
 
+/* END OF ROOT STYLES */
+
 /* GLOBAL STYLES */
+
 header{
     display: flex;
     background-image: url('images/swiss-valley.jpg');
@@ -92,7 +99,7 @@ header h1 a{
 }
 
 header h1 a:hover,
-header h1 a:focus {
+header h1 a:focus{
     color: var(--accent-color);
 }
 
@@ -117,9 +124,14 @@ nav a:focus{
     border-bottom-color: var(--accent-color);
 }
 
+main{
+    width: 1440px;
+    margin: 0 auto;
+}
+
 footer{
     background-color: var(--secondary-color);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 footer p{
@@ -131,3 +143,7 @@ footer p{
 footer p:first-child{
     margin-bottom: 1rem;
 }
+
+/* END OF GLOBAL STYLES */
+
+/* INDEX PAGE STYLES */
