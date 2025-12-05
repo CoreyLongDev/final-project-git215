@@ -71,15 +71,19 @@ nav a:focus{
     border-bottom-color: var(--accent-color);
 }
 
+nav a.current {
+    border-bottom-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
 body{
-    font-family: Helvetica, sans-serif;
     width: 1440px;
     margin: 0 auto;
 }
 
 footer{
     background-color: var(--secondary-color);
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
 
 footer p{
@@ -89,7 +93,7 @@ footer p{
 }
 
 footer p:first-child{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* END OF GLOBAL STYLES */
@@ -102,10 +106,12 @@ main h2{
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
+    grid-column: 1 / -1;
 }
 
-main > p{
+main section > p{
     font-family: var(--font-secondary);
+    grid-column: 1 / -1;
     text-align: center;
     font-size: 1.5rem;
     line-height: 1.6;
@@ -116,7 +122,7 @@ main > p{
     color: var(--text-color);
 }
 
-main > section{
+main section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
