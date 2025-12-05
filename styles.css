@@ -116,3 +116,18 @@ nav a:focus{
     color: var(--accent-color);
     border-bottom-color: var(--accent-color);
 }
+
+footer{
+    background-color: var(--secondary-color);
+    padding: 2rem;
+}
+
+footer p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--white);
+}
+
+footer p:first-child{
+    margin-bottom: 1rem;
+}
