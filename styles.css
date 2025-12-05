@@ -66,3 +66,52 @@ table {
 }
 
 /* GLOBAL STYLES */
+header {
+    background-image: url('images/swiss-valley.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-main);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+header h1 a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header h1 a:hover,
+header h1 a:focus {
+    color: var(--accent-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--accent-color);
+    border-bottom-color: var(--accent-color);
+}
