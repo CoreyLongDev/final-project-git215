@@ -16,7 +16,7 @@
             <h1>Grindelwald Lodge</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>                    
+                    <li><a href="index.html">Home</a></li>                  
                     <li><a href="#">Accommodations</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -24,7 +24,41 @@
         </header>
 
         <main>
+            <h2>Contact Us</h2>
+            <p>
+                Please reach out to us with any questions or concerns. We are happy 
+                to help you plan your dream vacation with us!
+            </p>
+            <p>Required fields marked with a *</p>
 
+            <section class="contact-container">
+                <img src="images/swiss-peak.jpg" alt="Majestic snow-capped Swiss mountain peak" width="600" height="800">
+
+                <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <fieldset>
+                        <legend>Preferred Contact Method *</legend>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                        <label for="contact-email">Email</label>
+
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                        <label for="contact-phone">Phone</label>
+                    </fieldset>
+
+                    <label for="comments">Comments *</label>
+                    <textarea id="comments" name="comments" rows="5" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+        </section>
         </main>
 
         <footer>
